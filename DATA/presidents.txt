@@ -38,7 +38,8 @@
 38:Ford:Gerald Rudolph:1913-07-14:2006-12-26:Omaha:Nebraska:1974-08-09:1977-01-20:Republican
 39:Carter:James Earl 'Jimmy':1924-10-01:NONE:Plains:Georgia:1977-01-20:1981-01-20:Democratic
 40:Reagan:Ronald Wilson:1911-02-06:2004-06-05:Tampico:Illinois:1981-01-20:1989-01-20:Republican
-41:Bush:George Herbert Walker:1924-06-12:NONE:Milton:Massachusetts:1989-01-20:1993-01-20:Republican
+41:Bush:George Herbert Walker:1924-06-12:2018-11-30:Milton:Massachusetts:1989-01-20:1993-01-20:Republican
 42:Clinton:William Jefferson 'Bill':1946-08-19:NONE:Hope:Arkansas:1993-01-20:2001-01-20:Democratic
 43:Bush:George Walker:1946-07-06:NONE:New Haven:Connecticut:2001-01-20:2009-01-20:Republican
-44:Obama:Barack Hussein:1961-08-04:NONE:Honolulu:Hawaii:2009-01-20:NONE:Democratic
+44:Obama:Barack Hussein:1961-08-04:NONE:Honolulu:Hawaii:2009-01-20:2017-01-20:Democratic
+45:Trump:Donald John:1946-06-14:NONE:Queens, NYC:New York:2017-01-20:NONE:Republican
