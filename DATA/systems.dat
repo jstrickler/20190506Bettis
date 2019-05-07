@@ -1,0 +1,9 @@
+aquila:Solaris:9:Sparc:elx0/11.1.3.10:30000:1024:Porky Pig
+aries:Windows XP:SP2:Intel:wi0/92.90.90.90:30000:1024:Top Cat
+corvus:Solaris:9:Sparc:elx0/11.1.3.15:80000:1024:George Jetson
+cygnus:BSD:4.4:Intel:wi0/92.90.90.91:40000:2048:Barney Rubble
+orion:Linux:RH Enterprise:Intel:eth0/228.92.23.1:20000:512:Olive Oyl
+ursamajor:Solaris:8:Sparc:elx0/10.2.4.5:40000:1024:Quickdraw McGraw
+ursaminor:Solaris:9:Sparc:elx0/11.1.3.5;elx1/11.1.3.6:20000:1024:Yosemite Sam
+vela:Linux:RH Enterprise:Intel:eth0/228.92.83.9:20000:1024:Bugs Bunny
+virgo:Linux:RH Fedora:Intel:eth0/228.92.23.2:30000:512:Yogi Bear

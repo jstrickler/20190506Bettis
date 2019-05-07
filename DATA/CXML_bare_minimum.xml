@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cxml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bom.gov.au/bmrc/projects/THORPEX/CXML/cxml.0.2.xsd">
+	<header>
+		<product>Cyclone Analysis</product>
+		<generatingApplication>
+			<applicationType>Manual hurricane analysis</applicationType>
+		</generatingApplication>
+		<productionCenter>NWS</productionCenter>
+		<creationTime>2007-07-25T15:42:00</creationTime>
+	</header>
+
+	<data type="analysis" movie="The Big Lebowski">
+		<disturbance ID="2007072518_134N_1102E">
+			<fix>
+				<validTime>2007-07-25T12:00:00Z</validTime>
+				<latitude units="deg N">13.2</latitude>
+				<longitude units="deg E">110.0</longitude>
+			</fix>
+		</disturbance>
+	</data>
+	<data type="analysis" movie="The Big Lebowski">
+		<disturbance ID="2008872518_134N_1102E">
+			<fix>
+				<validTime>2007-07-25T12:00:00Z</validTime>
+				<latitude units="deg N">13.2</latitude>
+				<longitude units="deg E">110.0</longitude>
+			</fix>
+		</disturbance>
+	</data>
+	<data type="analysis" movie="The Big Lebowski">
+		<disturbance ID="2009972518_134N_1102E">
+			<fix>
+				<validTime>2007-07-25T12:00:00Z</validTime>
+				<latitude units="deg N">13.2</latitude>
+				<longitude units="deg E">110.0</longitude>
+			</fix>
+		</disturbance>
+	</data>
+</cxml>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cxml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bom.gov.au/bmrc/projects/THORPEX/CXML/cxml.0.2.xsd">
+	<header>
+		<product>Cyclone Analysis</product>
+		<generatingApplication>
+			<applicationType>Radar hurricane analysis</applicationType>
+		</generatingApplication>
+		<productionCenter>NWS
+			<subCenter>National Hurricane Center</subCenter>
+		</productionCenter>
+		<baseTime>2007-07-25T12:00:00Z</baseTime>
+		<creationTime>2007-07-25T15:42:00</creationTime>
+		<spatialReferenceSystem>
+			<name>esriSRSpheroid_WGS1984</name>
+			<radius units="km">6378.137</radius>
+		</spatialReferenceSystem>
+	</header>
+
+	<data type="analysis">
+		<disturbance ID="2007072518_134N_1102E">
+			<cycloneNumber>1</cycloneNumber>
+			<fix source="satellite">
+				<validTime>2007-07-25T12:00:00Z</validTime>
+				<latitude units="deg N">13.2</latitude>
+				<longitude units="deg E">110.0</longitude>
+				<positionCodeNumber>1</positionCodeNumber>
+				<satelliteName>MTSAT</satelliteName>
+				<satelliteSensor>infrared</satelliteSensor>
+				<fixSite>FJDG</fixSite>
+				<cycloneData>
+					<development>tropical cyclone</development>
+					<category>2</category>
+					<Dvorak>
+						<dataTnumber>3.5</dataTnumber>
+						<modelExpectedTnumber>3.5</modelExpectedTnumber>
+						<patternTnumber>3.0</patternTnumber>
+						<finalTnumber>3.0</finalTnumber>
+						<ongoingChange>MINUS</ongoingChange>
+						<currentIntensity>3.0</currentIntensity>
+						<pastChange>D1.0</pastChange>
+						<changePeriod units="h">24</changePeriod>
+					</Dvorak>
+					<eye source="satellite">
+						<shape>circular</shape>
+						<diameter units="km">35.</diameter>
+					</eye>
+					<comments>All data in this file are made up numbers</comments>
+				</cycloneData>
+			</fix>
+			<fix source="aircraft">
+				<validTime>2007-07-25T12:00:00Z</validTime>
+				<latitude units="deg N">13.2</latitude>
+				<longitude units="deg E">110.0</longitude>
+				<flightLevel units="m">5000.</flightLevel>
+				<navAccuracy units="km">2.2</navAccuracy>
+				<missionNumber>1</missionNumber>
+				<cycloneData>
+					<minimumPressure>
+						<pressure units="hPa">989.8</pressure>
+						<accuracy units="hPa">0.5</accuracy>
+					</minimumPressure>
+					<maximumWind>
+						<speed units="m/s">49.</speed>
+						<bearing units="deg true">186.</bearing>
+						<range units="km">100.</range>
+					</maximumWind>
+					<maxFlightLevelWind>
+						<speed units="m/s">78.5</speed>
+						<directionToward units="deg true">210.</directionToward>
+						<bearing units="deg true">186.</bearing>
+						<range units="km">100.</range>
+					</maxFlightLevelWind>
+					<temperature>
+						<tempInsideEye units="C">2.1</tempInsideEye>
+						<tempOutsideEye units="C">-52.4</tempOutsideEye>
+						<dewpointTemperature units="C">22.3</dewpointTemperature>
+						<seaSurfaceTemperature units="C">27.5</seaSurfaceTemperature>
+					</temperature>
+					<eye>
+						<shape>elliptic</shape>
+						<orientation units="deg true">20</orientation>
+						<diameter units="km">35.</diameter>
+						<shortAxis units="km">30.</shortAxis>
+						<wallCloudThickness units="km">7.</wallCloudThickness>
+					</eye>
+					<comments>All data in this file are made up numbers</comments>
+				</cycloneData>
+			</fix>
+			<fix source="radar">
+				<validTime>2007-07-25T12:00:00Z</validTime>
+				<latitude units="deg N">13.2</latitude>
+				<longitude units="deg E">110.0</longitude>
+				<platform>land</platform>
+				<RADOBcode>FFAA 04000 45004 48215 1114.5 202// 52512=</RADOBcode>
+				<radarSitePosition>
+					<latitude units="deg N">14.0</latitude>
+					<longitude units="deg E">112.1</longitude>
+					<WMOidentifier>95142</WMOidentifier>
+				</radarSitePosition>
+				<cycloneData>
+					<eye>
+						<shape>elliptic</shape>
+						<diameter units="km">35.</diameter>
+						<percentWallObserved>80.</percentWallObserved>
+					</eye>
+					<spiralOverlay units="deg">270.</spiralOverlay>
+					<comments>All data in this file are made up numbers</comments>
+				</cycloneData>
+			</fix>
+			<fix source="synoptic">
+				<validTime>2007-07-25T12:00:00Z</validTime>
+				<latitude units="deg N">13.2</latitude>
+				<longitude units="deg E">110.0</longitude>
+				<distanceToNearestData units="km">35.</distanceToNearestData>
+				<cycloneData>
+					<maximumWind>
+						<speed units="m/s">49.8</speed>
+					</maximumWind>
+					<comments>All data in this file are made up numbers</comments>
+				</cycloneData>
+			</fix>
+		</disturbance>
+	</data>
+</cxml>

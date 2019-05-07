@@ -1,0 +1,20 @@
+127.0.0.1 localhost
+
+# main router
+192.168.3.1 vpn vpn-router gateway
+
+# web server
+192.168.3.100 sam webserver
+
+# LinkSys wireless access point
+192.168.3.2 wifi wifi-router
+
+# Voice over IP 
+192.168.3.3 voip voip-router voicerouter
+
+# user workstations
+192.168.3.4 gimli
+192.168.3.9 aragorn
+192.168.3.17 gandalf
+192.168.3.37 frodo
+192.168.3.19 arwen

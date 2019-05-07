@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cxml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="http://www.bom.gov.au/bmrc/projects/THORPEX/CXML/cxml.0.2.xsd">
+	<header>
+		<product>Cyclone Forecast</product>
+		<trackingDomain>global</trackingDomain>
+		<generatingApplication>
+			<applicationType>Global ensemble prediction system</applicationType>
+			<model>
+				<name>ECMWF</name>
+				<domain>global</domain>
+				<modelResolution>T399</modelResolution>
+				<dataResolution units="degrees">0.5</dataResolution>
+				<productionStatus>prod</productionStatus>
+			</model>
+			<ensemble>
+				<numMembers>51</numMembers>
+				<perturbationMethod>SVD</perturbationMethod>
+			</ensemble>
+		</generatingApplication>
+		<productionCenter>ECMWF
+			<subCenter>Operations Division</subCenter>
+		</productionCenter>
+		<moreInfo>http://www.ecmwf.int/about/eps.html</moreInfo>
+		<moreMetadata>http://www.ecmwf.int/about/eps_metadata.html</moreMetadata>
+		<baseTime>2007-07-25T12:00:00Z</baseTime>
+		<creationTime>2007-07-25T15:42:00</creationTime>
+		<spatialReferenceSystem>
+			<name>esriSRSpheroid_WGS1984</name>
+			<radius units="km">6378.137</radius>
+		</spatialReferenceSystem>
+	</header>
+
+	<data type="analysis">
+		<disturbance ID="2007072518_134N_1102E">
+			<cycloneName>George</cycloneName>
+			<basin>Southern Hemisphere</basin>
+			<fix source="satellite">
+				<validTime>2007-07-25T12:00:00Z</validTime>
+				<latitude units="deg N" precision="0.1">13.2</latitude>
+				<longitude units="deg E" precision="0.1">110.0</longitude>
+				<accuracy units="deg">0.3</accuracy>
+				<subRegion>South Indian Ocean</subRegion>
+				<positionCodeNumber>1</positionCodeNumber>
+				<satelliteName>MTSAT</satelliteName>
+				<satelliteSensor>IR 1</satelliteSensor>
+				<fixSite>FJDG</fixSite>
+				<cycloneData>
+					<development>tropical cyclone</development>
+					<category>2</category>
+					<Dvorak>
+						<dataTnumber>3.5</dataTnumber>
+						<modelExpectedTnumber>3.5</modelExpectedTnumber>
+						<patternTnumber>3.0</patternTnumber>
+						<finalTnumber>3.0</finalTnumber>
+						<ongoingChange>MINUS</ongoingChange>
+						<currentIntensity>3.0</currentIntensity>
+						<pastChange>D1.0</pastChange>
+						<changePeriod units="h">24</changePeriod>
+					</Dvorak>
+					<eye source="satellite">
+						<shape>circular</shape>
+						<diameter units="km" precision="2">35.</diameter>
+					</eye>
+					<minimumPressure source="Dvorak">
+						<pressure units="hPa" precision="5">990.</pressure>
+						<accuracy units="hPa">0.5</accuracy>
+					</minimumPressure>
+					<maximumWind source="aircraft">
+						<speed units="m/s" precision="0.2">49.8</speed>
+						<averagingPeriod units="min">10.</averagingPeriod>
+						<latitude units="deg N">13.24</latitude>
+						<longitude units="deg E">110.13</longitude>
+						<radius units="km">25.2</radius>
+						<gusts units="m/s" precision="3">115.</gusts>
+						<gustAvgPeriod units="s">3.</gustAvgPeriod>
+						<accuracy units="m/s">2.</accuracy>
+					</maximumWind>
+				</cycloneData>
+			</fix>
+			<fix source="aircraft">
+				<validTime>2007-07-25T12:00:00Z</validTime>
+				<latitude units="deg N" precision="0.1">13.2</latitude>
+				<longitude units="deg E" precision="0.1">110.0</longitude>
+				<accuracy units="km">1.</accuracy>
+				<flightLevel units="m" precision="20">5000.</flightLevel>
+				<navAccuracy units="km">2.2</navAccuracy>
+				<missionNumber>1</missionNumber>
+				<cycloneData>
+					<eye source="aircraft">
+						<shape>elliptic</shape>
+						<orientation units="deg true" precision="5">20</orientation>
+						<diameter units="km" precision="1">35.</diameter>
+						<shortAxis units="km" precision="1">30.</shortAxis>
+						<wallCloudThickness units="km">7.</wallCloudThickness>
+					</eye>
+					<stormMotion>
+						<directionToward units="deg true" precision="5">210.</directionToward>
+						<speed units="m/s" precision="0.1">50.0</speed>
+						<speedAccuracy units="m/s">5.</speedAccuracy>
+						<directionAccuracy units="deg">10.</directionAccuracy>
+					</stormMotion>
+					<minimumPressure source="dropsonde">
+						<pressure units="hPa" precision="0.2">989.8</pressure>
+						<accuracy units="hPa">0.5</accuracy>
+					</minimumPressure>
+					<maximumWind source="aircraft">
+						<speed units="m/s" precision="1.">49.</speed>
+						<bearing units="deg true" precision="2.">186.</bearing>
+						<range units="km" precision="5.">100.</range>
+					</maximumWind>
+					<maxFlightLevelWind>
+						<speed units="m/s" precision="0.2">78.5</speed>
+						<directionToward units="deg true" precision="5">210.</directionToward>
+						<bearing units="deg true" precision="1">186.</bearing>
+						<range units="km" precision="5">100.</range>
+					</maxFlightLevelWind>
+					<temperature source="dropsonde">
+						<tempInsideEye units="C">2.1</tempInsideEye>
+						<tempOutsideEye units="C">-52.4</tempOutsideEye>
+						<dewpointTemperature units="C">22.3</dewpointTemperature>
+						<seaSurfaceTemperature units="C">27.5</seaSurfaceTemperature>
+					</temperature>
+					<comments>All data in this file are made up numbers</comments>
+				</cycloneData>
+			</fix>
+			<fix source="radar">
+				<validTime>2007-07-25T12:00:00Z</validTime>
+				<latitude units="deg N" precision="0.1">13.2</latitude>
+				<longitude units="deg E" precision="0.1">110.0</longitude>
+				<accuracy units="deg">0.05</accuracy>
+				<platform>land</platform>
+				<RADOBcode>FFAA 04000 45004 48215 1114.5 202// 52512=</RADOBcode>
+				<radarSitePosition>
+					<latitude units="deg N">14.0</latitude>
+					<longitude units="deg E">112.1</longitude>
+					<WMOidentifier>95142</WMOidentifier>
+				</radarSitePosition>
+				<cycloneData>
+					<eye source="radar">
+						<shape>elliptic</shape>
+						<diameter units="km" precision="1">35.</diameter>
+						<shortAxis units="km" precision="1">26.</shortAxis>
+						<wallCloudThickness units="km">3.</wallCloudThickness>
+						<percentWallObserved>80.</percentWallObserved>
+					</eye>
+					<spiralOverlay units="deg">270.</spiralOverlay>
+					<comments>All data in this file are made up numbers</comments>
+				</cycloneData>
+			</fix>
+			<fix source="synoptic">
+				<validTime>2007-07-25T12:00:00Z</validTime>
+				<latitude units="deg N" precision="0.1">13.2</latitude>
+				<longitude units="deg E" precision="0.1">110.0</longitude>
+				<distanceToNearestData units="km">35.</distanceToNearestData>
+				<cycloneData>
+					<maximumWind>
+						<speed units="m/s" precision="1">50.</speed>
+					</maximumWind>
+					<comments>All data in this file are made up numbers</comments>
+				</cycloneData>
+			</fix>
+		</disturbance>
+	</data>
+
+	<data member="0" origin="ECMWF" perturb="control" type="ensembleForecast">
+		<disturbance ID="2007072518_134N_1102E">
+			<cycloneName>George</cycloneName>
+			<cycloneNumber>1</cycloneNumber>
+			<localID>EPS0001</localID>
+			<basin>Southern Hemisphere</basin>
+			<objectiveTechnique>BLND</objectiveTechnique>
+			<fix hour="6">
+				<validTime>2007-07-25T18:00:00Z</validTime>
+				<latitude units="deg N" precision="0.01">13.40</latitude>
+				<longitude units="deg E" precision="0.01">110.20</longitude>
+				<subRegion>South Indian Ocean</subRegion>
+				<cycloneData biasCorrected="true">
+					<development>tropical cyclone</development>
+					<systemDepth>medium</systemDepth>
+					<stormMotion source="model">
+						<directionToward units="deg true" precision="5">210.</directionToward>
+						<speed units="m/s" precision="0.1">50.0</speed>
+					</stormMotion>
+					<cyclonePhase>
+						<stormRelThkSymmetry units="m">30.</stormRelThkSymmetry>
+						<thermalWindLower units="m/s">50.</thermalWindLower>
+						<thermalWindUpper units="m/s">-250.</thermalWindUpper>
+					</cyclonePhase>
+					<minimumPressure source="model">
+						<pressure units="hPa" precision="0.1">989.8</pressure>
+					</minimumPressure>
+					<lastClosedIsobar source="model">
+						<pressure units="hPa" precision="0.1">1002.3</pressure>
+						<radius units="km" precision="5">600.</radius>
+					</lastClosedIsobar>
+					<maximumWind source="model">
+						<speed units="m/s" precision="0.1">49.8</speed>
+						<latitude units="deg N" precision="0.01">13.24</latitude>
+						<longitude units="deg E" precision="0.01">110.13</longitude>
+						<radius units="km" precision="0.1">25.2</radius>
+					</maximumWind>
+					<windContours source="model">
+						<windSpeed units="kt">34
+							<radius sector="AAA" units="km">235.</radius>
+							<radius sector="NEQ" units="km">200.</radius>
+							<radius sector="SEQ" units="km">243.</radius>
+							<radius sector="SWQ" units="km">301.</radius>
+							<radius sector="NWQ" units="km">228.</radius>
+						</windSpeed>
+						<windSpeed units="kt">50
+							<radius sector="NEQ" units="km">159.</radius>
+							<radius sector="SEQ" units="km">138.</radius>
+							<radius sector="SWQ" units="km">121.</radius>
+							<radius sector="NWQ" units="km">107.</radius>
+						</windSpeed>
+						<windSpeed units="kt">63
+							<radius sector="AAA" units="km">64.</radius>
+						</windSpeed>
+					</windContours>
+					<maximumPrecipitation source="model">
+						<intensity units="mm/h" precision="1.">68.</intensity>
+						<accuracy units="mm/h">20.</accuracy>
+						<latitude units="deg N" precision="0.01">13.05</latitude>
+						<longitude units="deg E" precision="0.01">110.25</longitude>
+						<precipitationType>rain</precipitationType>
+					</maximumPrecipitation>
+					<maximumWaveHeight source="model">
+						<height units="mm" precision="1.">68.</height>
+						<accuracy units="m">5.</accuracy>
+						<latitude units="deg N" precision="0.01">13.05</latitude>
+						<longitude units="deg E" precision="0.01">110.25</longitude>
+					</maximumWaveHeight>
+					<seaContours source="model">
+						<waveHeight units="m">10.
+							<radius sector="AAA" units="km">200.</radius>
+						</waveHeight>
+						<waveHeight units="m">20.
+							<radius sector="AAA" units="km">120.</radius>
+						</waveHeight>
+					</seaContours>
+					<fixedRadii source="model">
+						<fixedRadius units="km">500.
+							<pressure units="hPa" precision="0.1">995.3</pressure>
+							<tangentialWind units="m/s" precision="1.">50.7</tangentialWind>
+						</fixedRadius>
+						<fixedRadius units="km">1000.
+							<pressure units="hPa" precision="0.1">1006.0</pressure>
+							<tangentialWind units="m/s" precision="0.1">27.3</tangentialWind>
+						</fixedRadius>
+					</fixedRadii>
+				</cycloneData>
+			</fix>
+		</disturbance>
+	</data>
+</cxml>
