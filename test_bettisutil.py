@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import sys
 import unittest   # TestCase
 from nnl.bettis.misc.bettisutil import spam, eels
 
@@ -24,6 +25,7 @@ class TestBettisutil(unittest.TestCase):
         with self.assertRaises(TypeError):
             spam(None)
 
+    @unittest.skipUnless(sys.platform == 'win32', "eels() only implemented on Windows")
     def test_eels_returns_42(self):
         result = eels()
         self.assertEqual(42, result)
@@ -33,6 +35,4 @@ class TestBettisutil(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
-
-
+    unittest.main(verbosity=2)

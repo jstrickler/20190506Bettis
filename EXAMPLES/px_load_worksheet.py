@@ -10,9 +10,7 @@ def main():
 # three ways to get to a worksheet:
 
     # 1
-    print(wb.get_sheet_names(), '\n')
-    ws = wb.get_sheet_by_name('US Presidents')
-    # or
+    print(wb.sheetnames, '\n')
     ws = wb['US Presidents']
     print(ws, '\n')
 
@@ -27,6 +25,7 @@ def main():
 
     print(ws['A1'].value)
     print(ws['C2'].value, ws['B2'].value)
+
 
 
 if __name__ == '__main__':

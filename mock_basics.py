@@ -19,7 +19,7 @@ class Spam():
 class TestSpam(unittest.TestCase):  # <3>
 
     def test_spam_calls_ham(self):
-        _ = Spam(42)  # <4>
+        Spam(42)  # <4>
         ham.assert_called_once_with(42)  # <5>
 
 

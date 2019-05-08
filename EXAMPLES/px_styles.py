@@ -2,6 +2,8 @@
 # (c)2015 John Strickler
 import openpyxl as px
 
+print(px.__version__)
+
 def main():
     """program entry point"""
     wb = px.load_workbook('../DATA/presidents.xlsx')
@@ -16,7 +18,8 @@ def update_last_names(ws):
     for row in ws['B2:B45']:
         cell = row[0]
         cell.value = cell.value.upper()
-        cell.font = px.styles.Font(color='FF0000FF')
+        cell.font = px.styles.Font(color='99000099', name="Comic Sans")
+        cell.fill = px.styles.PatternFill(patternType='solid', bgColor=px.styles.Color("2000AA00"))
 
 if __name__ == '__main__':
     main()

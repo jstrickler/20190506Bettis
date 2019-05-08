@@ -6,7 +6,7 @@ import openpyxl as px
 def main():
     """program entry point"""
     wb = px.load_workbook('../DATA/presidents.xlsx')
-    ws = wb.get_sheet_by_name('US Presidents')
+    ws = wb['US Presidents']
 
     add_age_at_inauguration(ws)
 

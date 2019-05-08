@@ -28,8 +28,8 @@ print("a * 10")
 print(a * 10)
 print()
 
-print("a + b")
-print(a + b)
+print("a * b")
+print(a * b)
 print()
 
 print("b + 3")
@@ -43,3 +43,5 @@ print()
 
 a += 1000
 print(a)
+
+print(a[2,1:3].sum())

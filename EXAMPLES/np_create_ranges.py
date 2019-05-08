@@ -16,7 +16,7 @@ print(r3)
 print("size is", r3.size)
 print()
 
-r4 = np.linspace(1.0, 5.0, 122)
+r4 = np.linspace(1.0, 5.0, 30)
 print(r4)
 print("size is", r4.size)
 print()
