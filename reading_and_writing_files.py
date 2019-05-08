@@ -17,9 +17,6 @@ with open('DATA/mary.txt') as mary_in:
     print(whole_file, '\n')
     print(repr(whole_file))
 
-
-
-
 # x = mary_in.readlines()
 
 
@@ -36,21 +33,17 @@ x = 5
 xt = type(x)
 print(xt)
 
-m = xt(42)
-print(m)
+M_THING = xt(42)
+print(M_THING)
 
-fruits = ["pomegranate", "cherry", "apricot", "Apple",
-"lemon", "Kiwi", "ORANGE", "lime", "Watermelon", "guava",
-"Papaya", "FIG", "pear", "banana", "Tamarind", "Persimmon",
-"elderberry", "peach", "BLUEberry", "lychee", "GRAPE", "date" ]
-
+FRUITS = ["pomegranate", "cherry", "apricot", "Apple",
+          "lemon", "Kiwi", "ORANGE", "lime", "Watermelon", "guava",
+          "Papaya", "FIG", "pear", "banana", "Tamarind", "Persimmon",
+          "elderberry", "peach", "BLUEberry", "lychee", "GRAPE", "date"]
 
 with open('fruitdata.txt', 'w') as fruitdata_out:
-    for fruit in fruits:
+    for fruit in FRUITS:
         fruitdata_out.write(fruit.upper() + '\n')
 
-
 with open('fruitdata2.txt', 'w') as fruitdata_out:
-    fruitdata_out.writelines(f.upper() + '\n' for f in fruits)
-
-
+    fruitdata_out.writelines(f.upper() + '\n' for f in FRUITS)
