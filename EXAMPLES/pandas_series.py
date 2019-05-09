@@ -23,7 +23,7 @@ print(s1[['h','b']], "\n")
 print(s1[['a','b','c']], "\n")
 
 print(s1.sum(), s1.mean(), s1.min(), s1.max(), "\n")
-print(s1.cumsum(), s1.cumprod(), "\n")
+print(s1.cumsum(), s1.cumprod(), s1.std(), "\n")
 print('a' in s1)
 print('m' in s1)
 

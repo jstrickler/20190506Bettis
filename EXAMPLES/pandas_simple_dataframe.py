@@ -5,7 +5,7 @@
 Created on Sun May 19 20:42:32 2013
 
 '''
-from pandas.core.frame import DataFrame
+from pandas import DataFrame
 from printheader import print_header
 
 cols = ['alpha','beta','gamma','delta','epsilon']
@@ -33,3 +33,30 @@ print(df, '\n')
 
 print_header("df['gamma']")
 print(df['gamma'])
+
+print(df['gamma']['a'])
+print(df.loc['a', 'gamma'])
+
+df['eta'] = df['alpha'] + df['beta']
+
+df.insert(2, 'rho', df['gamma'] * df['delta'])
+
+print(df)
+
+print(df.columns)
+print(cols)
+
+
+df.loc['h'] = range(7)
+
+print(df)
+
+
+df.loc['g'] = range(9, 16)
+print(df)
+
+# DF.loc[ROW-SPEC, COLUMN-SPEC]
+
+df.loc[:, :] = 42
+
+print(df)

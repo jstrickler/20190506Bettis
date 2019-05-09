@@ -42,7 +42,11 @@ df['gamma'] *= 1.5
 print(df)
 print()
 
-print_header("Multiply by strings")
-df['gamma'] *= 'spam'
-print(df)
-print()
+# print_header("Multiply by strings")
+# df['gamma'] *= 'spam'
+# print(df)
+# print()
+
+# df.apply(some_func, axis=0, args=(....))
+
+

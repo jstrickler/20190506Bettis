@@ -1,9 +1,9 @@
 #!/usr/bin/env python
-from multiprocessing.dummy import Pool  # <1>
+from multiprocessing import Pool  # <1>
 from pprint import pprint
 import requests
 
-POOL_SIZE = 4
+POOL_SIZE = 8
 
 BASE_URL = 'https://www.dictionaryapi.com/api/v3/references/collegiate/json/'  # <2>
 

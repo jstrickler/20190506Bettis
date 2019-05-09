@@ -9,17 +9,18 @@ def set_default(value, limit, default):
     return value
 
 
-raw_samples = np.array([5, 18, 36, 1000, 98, 2323])
+# raw_samples = np.array([5, 18, 36, 1000, 98, 2323])
+raw_samples = [5, 18, 36, 1000, 98, 2323]
 
-try:
-    print("Without sp.vectorize:")
-    norm_samples = set_default(raw_samples, 100, 0)
-except ValueError as err:
-    print("Function failed:", err)
-else:
-    print(norm_samples)
-finally:
-    print()
+# try:
+#     print("Without sp.vectorize:")
+#     norm_samples = set_default(raw_samples, 100, 0)
+# except ValueError as err:
+#     print("Function failed:", err)
+# else:
+#     print(norm_samples)
+# finally:
+#     print()
 
 set_default_vect = sp.vectorize(set_default)
 try:

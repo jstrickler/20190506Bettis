@@ -2,17 +2,27 @@
 
 '''
     sp_misc
-    
+
     created 2014 by jstrick
 '''
-import numpy as np
 import scipy as sp
-import matplotlib.pyplot as plt
-import pandas as pd
+
+import sys
+print(sys.modules['scipy'])
+
+from scipy.fftpack import cs_diff
+
+
+x = sp.array([1,2,3])
+print(x)
+print(type(x))
 
 
 def main():
-    pass  # code here
+    print(sp.info(cs_diff))
+    print('-' * 60)
+    print(sp.source(cs_diff))
+
 
 
 if __name__ == '__main__':

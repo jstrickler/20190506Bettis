@@ -35,10 +35,18 @@ print(df.alpha, '\n')
 print_header("df['b':'e']")
 print(df['b':'e'], '\n')
 
+# single row
+print_header("df['b':'b']")
+print(df['b':'b'], '\n')
+
 # slice columns
 print_header("df[['alpha','epsilon','beta']]")
 print(df[['alpha','epsilon','beta']])
 print()
+
+print(df.alpha.shape, type(df.alpha))
+print(df['b':'b'].shape, type(df['b':'b']))
+
 
 
 

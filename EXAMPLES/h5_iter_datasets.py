@@ -11,6 +11,8 @@ hfile = h5py.File(H5_FILE)
 
 dset = hfile[H5_DATASET]
 
+print("type of dset:", type(dset))
+
 for i, row in enumerate(dset):
     print("ROW {}: {}".format(i, row))
 print()
@@ -26,4 +28,7 @@ print()
 
 print("Rows 3 & 4, Columns 5 & 6")
 print(dset[3:5, 5:7])
+
+for row in dset:
+    print(row[[1,5,2]])
 

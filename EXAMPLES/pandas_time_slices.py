@@ -21,7 +21,7 @@ print("Last second: ",seconds[-1])
 # every month for 1 year
 monthly = pd.date_range('1/1/2013','12/31/2013', freq='M')
 print("Number of periods: {0} Seventh element: {1}".format(
-    len(monthly), 
+    len(monthly),
     monthly[6]
 ))
 
@@ -40,4 +40,8 @@ series = pd.Series(data,index=dates)
 # grab the half hour of data from 10:00 to 10:30
 time_slice = series['4/1/2013 10:00:00':'4/1/2013 10:30:00']
 print(time_slice)   # 31 values
+
+series.plot()
+import matplotlib.pyplot as plt
+plt.show()
 
